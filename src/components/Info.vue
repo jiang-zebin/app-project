@@ -65,7 +65,7 @@
         </ul>
       </div>
     </div>
-    <div class="login_p" @click="showLogin()" :class="isShow?'show':''"></div>
+    <div class="login_p" @click="showLogin()" :class="isShow?'show':''" @touchmove.prevent></div>
     <down-nav :isActive="isActive" :isShow="isShow"></down-nav>
     <login-page></login-page>
   </div>
